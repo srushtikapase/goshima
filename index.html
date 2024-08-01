@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GOSHIMA - Gokul Shirgaon Manufacturers Association</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #0066cc, #003366);
+            border-bottom: none;
+            transition: background 0.5s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-nav li a {
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar-nav li a:hover {
+            color: #f8b400;
+        }
+        .logo img {
+            height: 60px;
+            width: auto;
+            transition: transform 0.3s;
+        }
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+        .owl-carousel .item {
+            position: relative;
+            height: 100vh;
+        }
+        .owl-carousel .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+        }
+        .caption h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.5);
+            transform: perspective(600px) rotateX(10deg) rotateY(5deg);
+            display: inline-block;
+        }
+        .caption h3 {
+            font-size: 1.5em;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+            transform: perspective(600px) rotateX(5deg) rotateY(-5deg);
+            display: inline-block;
+        }
+        .hero-button {
+            padding: 10px 30px;
+            font-size: 1.2em;
+            background-color: #f8b400;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+        }
+        .hero-button:hover {
+            background-color: #fff;
+            color: #f8b400;
+        }
+        .owl-nav button {
+            background-color: rgba(0,0,0,0.5);
+            border: none;
+        }
+    </style>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <!-- SLIDER -->
+    <section id="home" style="z-index: 10;">
+        <div class="owl-carousel owl-theme home-slider">
+            <div class="item item-first">
+                <img src="images/slider-image1.jpg" alt="Slide 1">
+                <div class="caption">
+                    <div class="container">
+                        <h1>Welcome to GOSHIMA</h1>
+                        <h3>Your Partner in Industrial Growth</h3>
+                        <a href="#about" class="btn hero-button smoothScroll">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-second">
+                <img src="images/slider-image2.jpg" alt="Slide 2">
+                <div class="caption">
+                    <div class="container">
+                        <h1>Common Facilitation Centre</h1>
+                        <h3>The association has plans to build a Common Facilities Center (CFC) under which sophisticated quality control instruments & equipment as well as latest software for design & engineering will be made available to all members at nominal charges.</h3>
+                        <a href="#courses" class="btn hero-button smoothScroll">Take a course</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-third">
+                <img src="images/slider-image3.jpg" alt="Slide 3">
+                <div class="caption">
+                    <div class="container">
+                        <h1>Sand Reclamation Plant</h1>
+                        <h3>Presently processing almost 2000 tonnes of foundry sand per month and recycling it. This results in major savings for the member industries and avoids major environmental damage.</h3>
+                        <a href="#contact" class="btn hero-button smoothScroll">Let's chat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-fourth">
+                <img src="images/slider-image3x.jpg" alt="Slide 4">
+                <div class="caption">
+                    <div class="container">
+                        <h1>Another Important Feature</h1>
+                        <h3>Details about another important feature of the association or its services can be described here.</h3>
+                        <a href="#services" class="btn hero-button smoothScroll">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- LOGO TEXT HERE -->
+                <a href="#" class="logo"><img src="images/logo.png" alt="GOSHIMA"></a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="#top" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#team" class="smoothScroll">Our Team</a></li>
+                    <li><a href="#activities" class="smoothScroll">Activities</a></li>
+                    <li><a href="#projects" class="smoothScroll">Projects & Services</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000, // Change to desired default interval
+                autoplayHoverPause: true
+            });
+
+            // Custom timing for each slide
+            var owl = $('.owl-carousel');
+            owl.on('changed.owl.carousel', function(event) {
+                var index = event.item.index;
+                var intervals = [5000, 10000, 15000, 20000]; // Custom intervals for each slide
+                owl.trigger('stop.owl.autoplay');
+                owl.trigger('play.owl.autoplay', [intervals[index]]);
+            });
+        });
+    </script>
+<!-- ABOUT SECTION -->
+<section id="about" class="content-section bg-gray">
+     <div class="background-3d-effect"></div> <!-- 3D Background Effect -->
+ 
+     <div class="container">
+         <div class="section-title">
+             <h2>About Us</h2>
+             <p>Learn more about GOSHIMA and our mission.</p>
+         </div>
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="content-box">
+                     <i class="fa fa-cogs"></i>
+                     <h3>Industrial Excellence</h3>
+                     <p>Leading the way in industrial growth and innovation.</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="content-box">
+                     <i class="fa fa-handshake-o"></i>
+                     <h3>Community Engagement</h3>
+                     <p>Fostering strong relationships within our community.</p>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="content-box">
+                     <i class="fa fa-line-chart"></i>
+                     <h3>Continuous Growth</h3>
+                     <p>Dedicated to the continuous development of our members.</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ 
+    <!-- ABOUT -->
+<section id="about" class="content-section">
+     <div class="container">
+         <div class="section-title text-center">
+             <h2>About GOSHIMA</h2>
+             <p>Learn more about our mission and values.</p>
+         </div>
+         <div class="row">
+             <div class="col-md-6 col-sm-12">
+                 <div class="about-info">
+                     <h3>Our Story</h3>
+                     <p>Kolhapur, with its historical background, is well-known as a major pilgrimage destination. At the same time, the roots of industrialization in Kolhapur go back to the 1940s, when the first indigenous diesel engine was built at Shivaji Udyamnagar (industrial area within the city). Since then, various industries have flourished in Shiroli, Gokul Shirgaon, and Kagal industrial areas, making Kolhapur an important industrial hub in Maharashtra. Supply of intricate and precision machined castings to Indian as well as export markets is the specialty of Kolhapur, along with products and services for a variety of sectors.</p>
+                     <p>Gokul Shirgaon Manufacturers’ Association (GOSHIMA) was founded in 1985 to facilitate entrepreneurs and develop the industrial areas of Gokul Shirgaon in association with MIDC. With dedicated efforts of its director bodies and active participation by members, the association is now considered one of the major industrial associations of Maharashtra. Today, GOSHIMA represents more than 350 eminent industries from a variety of sectors such as engineering, auto ancillaries, chemical, food, textile, and pharmaceutical. It is one of the few associations in Maharashtra to receive ISO 9001:2015 certification for its well-established systems. The association has also developed useful infrastructure facilities including an office building, meeting rooms, and a conference hall. <a href="#" class="read-more">Click to Read more</a></p>
+                 </div>
+             </div>
+ 
+             <div class="col-md-6 col-sm-12">
+                 <div class="info-box">
+                     <h3>Quality Policy</h3>
+                     <ul>
+                         <li><i class="fa fa-check-circle"></i> Providing quality services in time.</li>
+                         <li><i class="fa fa-check-circle"></i> Working for continuous growth & progress of members through technological upgradation, management skills, and export promotion activities.</li>
+                         <li><i class="fa fa-check-circle"></i> Providing assistance to Micro, Small & Medium enterprises in resolving their issues in various government offices.</li>
+                         <li><i class="fa fa-check-circle"></i> Conducting cultural programs, get-togethers, seminars & other social activities to maintain unity & integrity of all members.</li>
+                     </ul>
+                     <h3>Objectives</h3>
+                     <ul>
+                         <li><i class="fa fa-bullseye"></i> Improvement in member satisfaction.</li>
+                         <li><i class="fa fa-bullseye"></i> Reduction in member complaints.</li>
+                         <li><i class="fa fa-bullseye"></i> On-time service.</li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- TEAM -->
+<section id="team" class="content-section bg-light">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Our Team <small>Meet Our Team Members</small></h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="images/team4.jpg" class="img-responsive" alt="Mr. Mohan Panditrao">
+                    </div>
+                    <div class="team-info">
+                        <h4>Mr. Mohan Panditrao</h4>
+                        <span>Chairman</span>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google"></a></li>
+                        <li><a href="#" class="fa fa-behance"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="images/team1.jpg" class="img-responsive" alt="Mr. Deepak Chorage">
+                    </div>
+                    <div class="team-info">
+                        <h4>Mr. Deepak Chorage</h4>
+                        <span>Vice Chairman</span>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#" class="fa fa-facebook-square"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="images/team2.jpg" class="img-responsive" alt="Mr. Nitinchandra Dalawai">
+                    </div>
+                    <div class="team-info">
+                        <h4>Mr. Nitinchandra Dalawai</h4>
+                        <span>Secretary</span>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#" class="fa fa-google"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="images/team3.jpg" class="img-responsive" alt="Mr. Swaroop Kadam">
+                    </div>
+                    <div class="team-info">
+                        <h4>Mr. Swaroop Kadam</h4>
+                        <span>Treasurer</span>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-envelope-o"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+     <!-- Courses -->
+     <section id="courses">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Activities <small>Variour Activities Conducted</small></h2>
+                         </div>
+
+                         <div class="owl-carousel owl-theme owl-courses">
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/activity/courses-image1.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                 <!-- <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 12 / 7 / 2018</span>
+                                                       <span><i class="fa fa-clock-o"></i> 7 Hours</span>
+                                                  </div>-->
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">TAPAMS Man. Director Visit</a></h3>
+                                                  <p align="justify">Managing Director of TAPAMS, Dr. P. Meganathan visit on Goshima's office and was felicitated on behalf of Goshima</p>
+                                             </div>
+
+                                                <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="images/logo1.png" class="img-responsive" alt="">
+                                                       <span>GOSHIMA</span>
+                                                  </div>
+                                                 <!--<div class="courses-price free">
+                                                       <a href="#"><span>Free</span></a>
+                                                  </div>-->
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/activity/courses-image2.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                  <!--<div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 20 / 7 / 2018</span>
+                                                       <span><i class="fa fa-clock-o"></i> 4.5 Hours</span>
+                                                  </div>-->
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">Innovative Idea Program</a></h3>
+                                                  <p align="justify">Goshima and Tata Technologies Pvt. Ltd. Combined Conducted Innovative Idea Accelerator Program. </p>
+                                             </div>
+
+                                                <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="images/logo1.png" class="img-responsive" alt="">
+                                                       <span>GOSHIMA</span>
+                                                  </div>
+                                                 <!--<div class="courses-price free">
+                                                       <a href="#"><span>Free</span></a>
+                                                  </div>-->
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/activity/courses-image3.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                 <!-- <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 15 / 8 / 2018</span>
+                                                       <span><i class="fa fa-clock-o"></i> 6 Hours</span>
+                                                  </div>-->
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">General Meeting</a></h3>
+                                                  <p align="justify">With Hon'ble Shri. Narayan Ranesaheb, Union Minister for Micro, Small and Medium Enterprises, Government of India, New Delhi.</p>
+                                             </div>
+
+                                                <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="images/logo1.png" class="img-responsive" alt="">
+                                                       <span>GOSHIMA</span>
+                                                  </div>
+                                                 <!--<div class="courses-price free">
+                                                       <a href="#"><span>Free</span></a>
+                                                  </div>-->
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/activity/courses-image4.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                 <!-- <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 10 / 8 / 2018</span>
+                                                       <span><i class="fa fa-clock-o"></i> 8 Hours</span>
+                                                  </div>-->
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">Free Inspection of Workers</a></h3>
+                                                  <p align="justify">Free inspection of workers in Gokul Shirgaon Industrial Estate on behalf of Yuva Gramin Vikas Sanstha.</p>
+                                             </div>
+
+                                                 <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="images/logo1.png" class="img-responsive" alt="">
+                                                       <span>GOSHIMA</span>
+                                                  </div>
+                                                 <!--<div class="courses-price free">
+                                                       <a href="#"><span>Free</span></a>
+                                                  </div>-->
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/activity/courses-image5.jpg" class="img-responsive" alt="">
+                                                  </div>
+                                                  <!--<div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 5 / 10 / 2018</span>
+                                                       <span><i class="fa fa-clock-o"></i> 10 Hours</span>
+                                                  </div>-->
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">Paid homage</a></h3>
+                                                  <p align="justify">Late MLA Chandrakant Jadhav Saheb paid homage on behalf of Goshima during his reply function.</p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="images/logo1.png" class="img-responsive" alt="">
+                                                       <span>GOSHIMA</span>
+                                                  </div>
+                                                 <!--<div class="courses-price free">
+                                                       <a href="#"><span>Free</span></a>
+                                                  </div>-->
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TESTIMONIAL -->
+     <section id="testimonial">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Projects and Services <small>Pipelined and completed projects and services provided</small></h2>
+                         </div>
+
+                         <div class="owl-carousel owl-theme owl-client">
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <img src="images/sand-reclemation.jpg" class="img-responsive" alt="">
+                                      
+                                        <div class="tst-author">
+                                             <h4>sand reclamation plant</h4>
+                                             <span>Successfully Installed</span>
+                                        </div>
+                                        <p>presently processing almost 2000 tonnes of foundry sand per month and recycling it. This results in major savings for the member industries and avoids major environmental damage. </p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <img src="images/auditorium.jpg" class="img-responsive" alt="">
+                                        <div class="tst-author">
+                                             <h4>120-Seater Auditorium</h4>
+                                             <span>Pipelined Project</span>
+                                        </div>
+                                        <p>Building & developing a 120-seater auditorium with modern amenities in association with Menon industrial group.</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                         <img src="images/cfc.jpg" class="img-responsive" alt="">
+                                        <div class="tst-author">
+                                             <h4>Common Facilities Center(CFC)</h4>
+                                             <span>Pipelined Project</span>
+                                        </div>
+                                        <p>The association has plans to build a Common Facilities Center (CFC) under which sophisticated quality control instruments & equipment as well as latest software for design & engineering will be made available to all members at nominal charges. </p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                            <!--  <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="images/tst-image4.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Andrio</h4>
+                                             <span>Web Developer</span>
+                                        </div>
+                                        <p>Nam eget mi eu ante faucibus viverra nec sed magna. Vivamus viverra sapien ex, elementum varius ex sagittis vel.</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>-->
+
+               </div>
+          </div>
+     </section> 
+<!-- CONTACT -->
+<section id="contact" class="content-section bg-light">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-6 col-sm-12">
+                 <form id="contact-form" role="form" action="" method="post">
+                     <div class="section-title text-center">
+                         <h2>Contact Us <small>We love conversations. Let us talk!</small></h2>
+                     </div>
+ 
+                     <div class="form-group">
+                         <input type="text" class="form-control" placeholder="Enter full name" name="name" required>
+                     </div>
+ 
+                     <div class="form-group">
+                         <input type="email" class="form-control" placeholder="Enter email address" name="email" required>
+                     </div>
+ 
+                     <div class="form-group">
+                         <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required></textarea>
+                     </div>
+ 
+                     <div class="form-group text-center">
+                         <input type="submit" class="btn btn-primary" name="send message" value="Send Message">
+                     </div>
+                 </form>
+             </div>
+ 
+             <div class="col-md-6 col-sm-12">
+                 <div class="contact-image">
+                     <img src="images/logo1.png" class="img-responsive" alt="Contact Image">
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ 
+ <!-- FOOTER -->
+ <footer id="footer" class="bg-dark text-white">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4 col-sm-6">
+                 <div class="footer-info">
+                     <div class="section-title">
+                         <h2>Headquarter</h2>
+                     </div>
+                     <address>
+                         <p>Plot No- P-35/40, MIDC<br> Gokul Shirgaon, Kolhapur</p>
+                     </address>
+ 
+                     <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook-square"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-instagram"></a></li>
+                     </ul>
+ 
+                     <div class="copyright-text">
+                         <p>&copy; 2024 GOSHIMA</p>
+                         <p>Developed By: <a href="http://www.sanjayghodawatuniversity.ac.in/dept-cse" target="_blank">CSE Department<br>Sanjay Ghodawat University Kolhapur</a></p>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="col-md-4 col-sm-6">
+                 <div class="footer-info">
+                     <div class="section-title">
+                         <h2>Contact Info</h2>
+                     </div>
+                     <address>
+                         <p>Phone: 0231-2672400</p>
+                         <p>Email: <a href="mailto:goshima2012@gmail.com">goshima2012@gmail.com</a></p>
+                     </address>
+ 
+                     <div class="footer_menu">
+                         <h2>Quick Links</h2>
+                         <ul>
+                             <li><a href="#testimonial">Projects</a></li>
+                             <li><a href="#courses">Activities</a></li>
+                             <li><a href="#team">Team</a></li>
+                             <li><a href="login.php">Login</a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="col-md-4 col-sm-12">
+                 <div class="footer-info newsletter-form">
+                     <div class="section-title">
+                         <h2>Newsletter Signup</h2>
+                     </div>
+                     <div class="form-group">
+                         <form action="indexscript.php" method="get">
+                             <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
+                             <input type="submit" class="btn btn-secondary" name="submit" id="form-submit" value="Send me">
+                         </form>
+                         <span><sup>*</sup> Please note - we do not spam your email.</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </footer>
+ 
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
