@@ -1,141 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title> CMS Portal - GOSHIMA </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+      <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<style>
-    /*set border to the form*/
-      
-    form {
-        border: 3px solid #f1f1f1;
-    }
-    /*assign full width inputs*/
-      
-    input[type=text],
-    input[type=password] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-    }
-    /*set a style for the buttons*/
-      
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-    }
-    /* set a hover effect for the button*/
-      
-    button:hover {
-        opacity: 0.8;
-    }
-    /*set extra style for the cancel button*/
-      
-    .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        background-color: #f44336;
-    }
-    /*centre the display image inside the container*/
-      
-    .imgcontainer {
-        text-align: center;
-        margin: 24px 0 12px 0;
-    }
-    /*set image properties*/
-      
-    img.avatar {
-        width: 40%;
-        border-radius: 50%;
-    }
-    /*set padding to the container*/
-      
-    .container {
-        padding: 16px;
-    }
-    /*set the forgot password text*/
-      
-    span.psw {
-        float: right;
-        padding-top: 16px;
-    }
-    /*set styles for span and cancel button on small screens*/
-      
-    @media screen and (max-width: 300px) {
-        span.psw {
-            display: block;
-            float: none;
-        }
-        .cancelbtn {
-            width: 100%;
-        }
-    }
-</style>
-  
+
 <body>
-<?php
-	if(isset($_GET['login']))
-		{
-			if($_GET['login']=="failed")
-			{
-				echo '<script language="javascript">'; 
-				echo "alert('Invalid userid or password')</script>";
-				echo '</script>';
-			}
-			
-			
-		}
-	elseif(isset($_GET['signin']))
-		{
-			if($_GET['signin']=="1")
-			{
-				echo '<script language="javascript">'; 
-				echo "alert('Email Successfully verified. Please login to continue.')</script>";
-				echo '</script>';
-			}
-			
-			
-		}
-?>
-  
-  <table border="0">
-  <tr>
-  	<td width="35%"></td>
-	<td>
-    <h2> CMS Login - Admin</h2>
-    <!--Step 1 : Adding HTML-->
-    <form action="alumniscript.php" method="post">
-        <div class="imgcontainer">
-            <img src="images/logo1.png" alt="SGU Logo" width="35%">
-        </div>
-  
+    <div id="auth">
+
         <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-  
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-  
-            <button type="submit" name="login" id="login">Login</button>
-            
+            <div class="row">
+                <div class="col-md-5 col-sm-12 mx-auto">
+                    <div class="card pt-4">
+                        <div class="card-body">
+                            <div class="text-center mb-5">
+                                <h3>Sign In</h3>
+                            </div>
+                            <form action="employee.html">
+                                <div class="form-group position-relative has-icon-left">
+                                    <label for="username">Username</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" id="username">
+                                        <div class="form-control-icon">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group position-relative has-icon-left">
+                                    <div class="clearfix">
+                                        <label for="password">Password</label>
+                                        <a href="#" class='float-end'>
+                                            <small>Forgot password?</small>
+                                        </a>
+                                    </div>
+                                    <div class="position-relative">
+                                        <input type="password" class="form-control" id="password">
+                                        <div class="form-control-icon">
+                                            <i class="fa fa-key"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='form-check clearfix my-4'>
+                                    <div class="checkbox float-start">
+                                        <a href="index.html" class='float-end'>
+                                            <small>admin</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <button class="btn btn-primary float-end">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="container" style="background-color:#f1f1f1">
-            <a href="index.html"><button type="button" class="cancelbtn" name="cancel" id="cancel">Cancel</button></a>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
-  </td>
-	<td width="35%"></td>
-  </tr>
-  </table>
+
+    </div>
+    <script src="assets/js/feather-icons/feather.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/main.js"></script>
 </body>
-  
+
 </html>
